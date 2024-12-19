@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container{
+  background-color: #cfcfcf;
+  padding: 3em 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* SHOWPAGE */
+.show{
+  background-color: #cfcfcf;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+}
+.show img{
+  object-fit: contain;
+}
+.show #intro{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(75, 75, 75);
 }
 
-.App-link {
-  color: #61dafb;
+/* Boxes */
+.boxes{
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(200px, 300px));
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+}
+.boxes .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(11, 11, 11) ;
+  border: 10px solid rgba(128, 128, 128, 0.479);
+  color: rgb(143, 143, 143);
+  padding: .8em;
+  height: 300px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+.boxes .box:hover{
+  color: rgb(0, 218, 198);
+  border: 10px solid rgba(168, 168, 168, 0.479);
+  background-color: rgb(20, 20, 20);
+}
+.box img{
+  width: 100%;
+  height: 80%;
+  border-radius: .4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sorting 1 */
+.s1_homepage{
+  width: 100%;
+  height: 100%;
+  background-color: #8bb935;
+  position: relative;
 }
+
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* background-color: gray; */
+  /* background-color: #8daa9d; */
+  background-color: #694f28;
+  min-height: 2.1rem;
+  font-size: 18px;
+}
+nav a{
+  text-decoration: none;
+  font-weight: 500;
+  /* color: black; */
+  color: rgb(218, 218, 218);
+}
+nav a:hover{
+  color: #ffa116;
+  text-decoration: underline;
+}
+
